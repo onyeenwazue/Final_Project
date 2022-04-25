@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import { GET_ID, REVIEW_SEARCH } from './globals'
+
+const App = () => {
+  const [search, setSearch] = useState("")
+  const [selectedMovie, setSelectedMovie] = useState(null)
+  // this should be a single movie object once you've select one
+
+  //input field
+const movieSearch = prompt("What movie would you like to see?");
+
+movieSearch();
+  
+  useEffect(() => {
+    async function getMovies() {
+      const res = await axios.get(`${GET_ID}/${movieSearch}`)
+      console.log(res)
+    }
+    getMovies()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
