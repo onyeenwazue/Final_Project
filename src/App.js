@@ -5,7 +5,7 @@ import { GET_ID, REVIEW_SEARCH } from './globals'
 import Input from './components/Input'
 
 const App = () => {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("Drive")
   const [selectedMovie, setSelectedMovie] = useState(null)
   // this should be a single movie object once you've select one
 console.log("Search:", search)
