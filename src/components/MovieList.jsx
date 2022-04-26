@@ -1,8 +1,13 @@
 const MovieList = ({results}) => {
     console.log("Search Results:", results)
+    // const images = results.image.map((image) =>{
+    //     return
+    // })
     return (
         <div className="grid">
-            {results?<img src={results[0].image} alt="poster" />:null}
+             {results?
+             results.map(movie => <img src={movie.image} alt="poster" />)
+             :null}
             
         
         </div>

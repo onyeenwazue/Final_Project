@@ -14,7 +14,7 @@ const Input = ({search, setSearch}) => {
     return (
         <div className="search">
             <label>Movie Search: 
-            <input type="text" onChange={handleChange} /></label>
+            <br></br><input type="text" onChange={handleChange} /></label>
             <input onClick={handleSubmit} type="submit" value="Submit" />
         </div>
     )

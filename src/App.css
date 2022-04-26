@@ -63,3 +63,12 @@ img {
   max-width: 750x;
   max-height: 750px;
 }
+
+label {
+  font-size: 36px;
+  font-family: "Helvetica Bold";
+}
+
+label::after {
+  content: "\a";
+}
