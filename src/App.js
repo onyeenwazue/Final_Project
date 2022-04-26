@@ -8,7 +8,7 @@ const App = () => {
   const [search, setSearch] = useState("")
   const [selectedMovie, setSelectedMovie] = useState(null)
   // this should be a single movie object once you've select one
-
+console.log("Search:", search)
   
   useEffect(() => {
     async function getMovies() {
@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div>
-        <Input />
+        <Input search={search} setSearch={setSearch}/>
 
     </div>
   )
