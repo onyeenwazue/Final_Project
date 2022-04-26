@@ -4,9 +4,9 @@ const Input = ({search, setSearch}) => {
         <div className="search">
             <label>Movie Search: </label>
             <input type="text" name="movie"/>
-            <input type="button" onClick={(e)=>{
+            <input type="submit" onClick={(e)=>{
                 e.preventDefault();
-                console.log("event:", e.target.value)
+                console.log("event:", e.target)
                 setSearch(e.target.value)
                 }}/>
         </div>
