@@ -9,18 +9,14 @@ const App = () => {
   const [selectedMovie, setSelectedMovie] = useState(null)
   // this should be a single movie object once you've select one
 
-  //input field
-const movieSearch = prompt("What movie would you like to see?");
-
-movieSearch();
   
-  // useEffect(() => {
-  //   async function getMovies() {
-  //     const res = await axios.get(`${GET_ID}/${movieSearch}`)
-  //     console.log(res)
-  //   } 
-  //   getMovies()
-  // }, [])
+  useEffect(() => {
+    async function getMovies() {
+      const res = await axios.get(`${GET_ID}/`)
+      console.log(res)
+    } 
+    getMovies()
+  }, [])
 
   return (
     <div>
