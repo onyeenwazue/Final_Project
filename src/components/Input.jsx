@@ -1,14 +1,21 @@
+import { useState } from 'react'
+
 const Input = ({search, setSearch}) => {
-    console.log("Input search:", search)
+    const [value, setValue] = useState("")
+    //console.log("Value:", value)
+    const handleChange = (e) => {
+        e.preventDefault();
+        setValue(e.target.value)
+    }   
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSearch(value)
+    }
     return (
         <div className="search">
-            <label>Movie Search: </label>
-            <input type="text" name="movie"/>
-            <input type="submit" onClick={(e)=>{
-                e.preventDefault();
-                console.log("event:", e.target)
-                setSearch(e.target.value)
-                }}/>
+            <label>Movie Search: 
+            <input type="text" onChange={handleChange} /></label>
+            <input onClick={handleSubmit} type="submit" value="Submit" />
         </div>
     )
 }
