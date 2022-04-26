@@ -1,8 +1,8 @@
-
 import './App.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { GET_ID, REVIEW_SEARCH } from './globals'
+import Input from './components/Input'
 
 const App = () => {
   const [search, setSearch] = useState("")
@@ -14,16 +14,17 @@ const movieSearch = prompt("What movie would you like to see?");
 
 movieSearch();
   
-  useEffect(() => {
-    async function getMovies() {
-      const res = await axios.get(`${GET_ID}/${movieSearch}`)
-      console.log(res)
-    }
-    getMovies()
-  }, [])
+  // useEffect(() => {
+  //   async function getMovies() {
+  //     const res = await axios.get(`${GET_ID}/${movieSearch}`)
+  //     console.log(res)
+  //   } 
+  //   getMovies()
+  // }, [])
 
   return (
     <div>
+        <Input />
 
     </div>
   )

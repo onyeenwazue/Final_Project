@@ -1,6 +1,10 @@
-function Input() {
+const Input = (props) => {
     return (
-        <div></div>
+        <div className="search">
+            <label>Movie Search: </label>
+            <input type="text" name="movie" />
+            <button onClick>Search</button>
+        </div>
     )
 }
 
