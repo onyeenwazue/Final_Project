@@ -23,7 +23,7 @@ console.log("Search:", search)
     <div>
         <Input search={search} setSearch={setSearch}/>
         <MovieList results={searchResults}/>
-
+      
     </div>
   )
 }

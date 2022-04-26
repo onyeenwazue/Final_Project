@@ -58,3 +58,8 @@ button:hover {
 .search {
   text-align: center;
 }
+
+img {
+  max-width: 750x;
+  max-height: 750px;
+}
