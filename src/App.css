@@ -65,10 +65,11 @@ img {
 }
 
 label {
-  font-size: 36px;
+  font-size: 64px;
   font-family: "Helvetica Bold";
+  font-weight: bold;
 }
 
-label::after {
-  content: "\a";
+body {
+  background-color: lightcyan;
 }
