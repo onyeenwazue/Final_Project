@@ -3,12 +3,12 @@ const Input = ({search, setSearch}) => {
     return (
         <div className="search">
             <label>Movie Search: </label>
-            <input onChange={(e)=>{
+            <input type="text" name="movie"/>
+            <input type="button" onClick={(e)=>{
                 e.preventDefault();
                 console.log("event:", e.target.value)
                 setSearch(e.target.value)
-                }} type="text" name="movie" />
-            <button>Search</button>
+                }}/>
         </div>
     )
 }
