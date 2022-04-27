@@ -1,4 +1,4 @@
-# Onyee's Final Project: Getting Started with Create React App
+# Onyee's Final Project: Movie Search
 
 #### This project uses the IMDb API to display movie posters for search terms that are entered on the page.
 
