@@ -1,6 +1,6 @@
 # Onyee's Final Project: Movie Search
 
-#### This project uses the IMDb API to display movie posters for search terms that are entered on the page.
+#### This project uses the IMDb API to display movie posters for search terms that are entered on the page. Currently this will show the first 8 results from the IMDb site.
 
 [IMDb API Documentation](https://imdb-api.com/api#SearchMovie-header) 
 
